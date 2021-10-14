@@ -1,0 +1,293 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinKin Station, site de E-Commerce</title>
+    <!--Lien SwipperJs CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!--Lien de Font Awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Mon Style Css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Section de début-->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-store"></i><span class="logo-color">Kinkin</span>Market</a>
+
+    <nav class="navbar">
+        <a href="#home">Accueil</a>
+        <a href="#products">Produits</a>
+        <a href="#categories">Categories</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Recherche..." autocomplete="off">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="assets/images/4.png" alt="" width="100%" height="100%">
+            <div class="content">
+                <h3>Espadrilles, Nike, Chaussure</h3>
+                <span class="price">35000/-</span>
+                <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="assets/images/2.png" alt="" width="100%" height="100%">
+            <div class="content">
+                <h3>Air Jordan, Jumpman</h3>
+                <span class="price">35000/-</span>
+                <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+        <div class="total">total : 70000/-</div>
+        <a href="#" class="btn">J'achète</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Connexion</h3>
+        <input type="email" placeholder="E-mail" class="box">
+        <input type="password" placeholder="Mot de passe" class="box">
+        <p>Mot de passe oublié ? <a href="#">Cliquez ici</a> </p>
+        <p>Pour Créer un compte <a href="#" id="sign-up">Cliquez ici</a> </p>
+        <input type="submit" value="Se Connecter" class="btn">
+    </form>
+
+    <form action="" class="login-form sign-up">
+        <h3>Inscription</h3>
+        <input type="text" placeholder="Nom" class="box" name="nom">
+        <input type="text" placeholder="Prenom" class="box" name="prenom">
+        <input type="email" placeholder="E-mail" class="box" name="email">
+        <input type="password" placeholder="Mot de passe" class="box" name="password">
+        <input type="password" placeholder="Confirmer votre mot de passe" class="box" name="confirmer">
+        <input type="submit" value="S'inscrire" class="btn" name="btn">
+    </form>
+</header>
+<!--Fin de la Section-->  
+<!--Section Accueil -->
+<section class="home" id="home">
+    <div class="content">
+        <div class="content-text">
+            <h3>Espadrilles, <span>Nike</span> De Basket Ball</h3>
+            <p>Pour les matchs entre amis ou la compétition, la Nike 
+                Team Hustle D 10 FlyEase a été conçue pour booster 
+                les joueurs de tous niveaux.</p>
+                <a href="#" class="btn">payer maintenant</a>
+        </div>
+        <div class="content-img">
+            <img src="assets/images/9.png" alt="" width="80%" height="80%">
+            
+        </div>
+    </div>
+</section>
+<!--Fin Section-->
+<!--fonctionnalités-->
+<section class="products" id="products">
+    <h1 class="heading">Les tendances<span>du moment</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="assets/images/1.png" alt="" width="auto" height="auto">
+            <h3>fresh and organic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia delectus expedita suscipit quis enim sed saepe temporibus esse dolore doloremque libero id harum accusamus reprehenderit voluptatem corrupti, omnis sit.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="box">
+            <img src="assets/images/3.png" alt="" width="auto" height="auto">
+            <h3>fresh and organic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia delectus expedita suscipit quis enim sed saepe temporibus esse dolore doloremque libero id harum accusamus reprehenderit voluptatem corrupti, omnis sit.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="box">
+            <img src="assets/images/5.png" alt="" width="auto" height= "auto">
+            <h3>fresh and organic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia delectus expedita suscipit quis enim sed saepe temporibus esse dolore doloremque libero id harum accusamus reprehenderit voluptatem corrupti, omnis sit.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+    </div>
+</section>
+<!--Fin-->
+<!----Slide des produits------->
+<section class="products-sliders">
+    <h1 class="heading">Nos <span>Produits</span></h1>
+    <!--Group 1--->
+    <div class="swiper products_slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="assets/images/8.png" alt="" width="auto" height="auto">
+                <h3>Nike Air Max 90 Wmns</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/7.png" alt="" width="auto" height="auto">
+                <h3>Nike Air Max 1</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/6.png" alt="" width="auto" height="auto">
+                <h3>Nike LeBron 14</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/10.png" alt="" width="auto" height="auto">
+                <h3>Nike Air Max</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+        </div>
+    </div>
+    <!-- Group 2-->
+    <div class="swiper products_slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="assets/images/11.png" alt="" width="90%" height="auto">
+                <h3>Nike Cuir</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/12.png" alt="" width="auto" height="auto">
+                <h3>Nike Air Max</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/13.png" alt="" width="auto" height="auto">
+                <h3>Espadrilles,Air Force</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/images/14.png" alt="" width="auto" height="auto">
+                <h3>Nike Air Max, Presto</h3>
+                <div class="price"> 35000 FCFA/- -45000 FCFA/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Fin-->
+<!--Section Categorie -->
+<section class="categories" id="categories">
+<h1 class="heading"><span>Catégories</span></h1>
+<div class="box-container">
+    <div class="box">
+        <img src="assets/images/cat-1.jpg" alt="" width="auto" height="auto">
+        <h3>HOMME</h3>
+        <p>45% de reduction</p>
+        <a href="#" class="btn">Voir plus</a>
+    </div>
+
+    <div class="box">
+        <img src="assets/images/cat-3.webp" alt="" width="auto" height="auto">
+        <h3>ENFANT</h3>
+        <p>45% de reduction</p>
+        <a href="#" class="btn">Voir plus</a>
+    </div>
+
+    <div class="box">
+        <img src="assets/images/cat-2.jpg" alt="" width="auto" height="auto">
+        <h3>FEMME</h3>
+        <p>45% de reduction</p>
+        <a href="#" class="btn">Voir plus</a>
+    </div>
+</div>
+</section>
+<!--Fin-->
+
+    <!--Script SwipperJs-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Mon Script Js-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
